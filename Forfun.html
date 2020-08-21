@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<title>Other Stuff</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {padding: 12px;}
+.w3-navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+</style>
+<body>
+
+<!--Navbar-->
+<div class="w3-top">
+  <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large">
+    <li class="w3-opennav w3-right w3-hide-large">
+      <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="index.html" class="w3-theme-l1">Home</a></li>
+    <li class="w3-hide-small"><a href="Research.html" class="w3-hover-white">Research</a></li>
+    <li class="w3-hide-small"><a href="Teaching.html" class="w3-hover-white">Teaching</a></li>
+    <li class="w3-hide-small"><a href="Forfun.html" class="w3-hover-white">Other Stuff</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-hover-white"></a></li>
+    <li class="w3-hide-medium w3-hide-small"><a href="#" class="w3-hover-white"></a></li>
+
+  </ul>
+</div>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4><b>Menu</b></h4>
+  <a href="#kaggle" class="w3-hover-black">Abstraction and Reasoning Challenge (Kaggle 2020)</a>
+  <a href="#euler" class="w3-hover-black">Project Euler</a>
+  <a href="#parks" class="w3-hover-black">Outdoors</a>
+
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal", id="kaggle">Abstraction and Reasoning Challenge</h1>
+      <p>
+	My colleagues Alejandro and Yugi and I placed second in the <a href="https://www.kaggle.com/c/abstraction-and-reasoning-challenge">Abstraction and Reasoning Challenge</a> on  Kaggle (Spring 2020). Hosted by Francois Chollet, the aim was to construct an AI able to solve the so-called tasks. These have very few training samples, making ordinary machine learning techniques inefficient. There were a total of over 900 teams and $20000 prize money. 
+     </p>
+     <p>
+       On the picture to the right is an example of a task solved by our method. The task can be broken down into the following steps. First it is necessary to identify the black as background color. Once this is done, different shapes can be determined via isolation. Among the computed shapes, the largest must be then reconstructed on each of the other shapes, which in this case are subshapes or the largest one. Note that the reconstructed shape may be rotated and/or flipped. Displayed are the three candidates submitted to the final solution, the third one solving the task and thus obtaining the maximum score. 
+    </p>
+    <p>
+      Our solution and documentation are available in this <a href="https://github.com/alejandrodemiquel/ARC_Kaggle">public repository</a>. 
+    </p>
+    </div>
+
+    <br>
+
+    <div class="w3-third w3-container">
+      <img src="webimages/kaggle.png" alt="replicate" style="width:100%;">
+    </div>
+</div>
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal", id="euler">Project Euler</h1>
+Currently level 10 with over 270 solved <a href="https://projecteuler.net/archives">problems</a>. I keep a <a href="https://github.com/RodericGuigoCorominas/project-euler">log</a> with links to the relevant theoretical background of each problem I solve. 
+    </div>
+</div>
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-container">
+      <h1 class="w3-text-teal", id="parks">Outdoors</h1>
+      <div class="w3-third w3-container">
+	<img src="natparks/deathv.jpg" alt="Death Valley" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/yosemite.jpg" alt="Yosemite" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/sequoia.jpg" alt="Sequoia" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/mrain.jpg" alt="Mount Rainier" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/antelope.jpg" alt="Antelope" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/clands.jpg" alt="Canyonlands" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/mverde.jpg" alt="Mesa Verde" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/acadia.jpg" alt="Acadia" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/bryce.jpg" alt="Bryce Canyon" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/creef.jpg" alt="Capitol Reef" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/deadhorse.jpg" alt="Dead Horse" style="width:100%;">
+      </div>
+      <div class="w3-third w3-container">
+	<img src="natparks/grandcanyon.jpg" alt="Grand Canyon" style="width:100%;">
+      </div> 
+     
+    </div>
+ </div>
+
+ 
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Roderic Guigo i Corominas<br> rguigo@bu.edu <br> MCS 250 </h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
