@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Research</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {padding: 12px;}
+.w3-navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large">
+    <li class="w3-opennav w3-right w3-hide-large">
+      <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="index.html" class="w3-theme-l1">Home</a></li>
+    <li class="w3-hide-small"><a href="Research.html" class="w3-hover-white">Research</a></li>
+    <li class="w3-hide-small"><a href="Teaching.html" class="w3-hover-white">Teaching</a></li>
+    <li class="w3-hide-small"><a href="Forfun.html" class="w3-hover-white">Other Stuff</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-hover-white"></a></li>
+    <li class="w3-hide-medium w3-hide-small"><a href="#" class="w3-hover-white"></a></li>
+
+  </ul>
+</div>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4><b>Menu</b></h4>
+  <a href="#research" class="w3-hover-black">Research.</a>
+  <!--<a href="#papers" class="w3-hover-black">Some interesting papers.</a>-->
+  </nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" id="research">Research Interests</h1>
+      	<p>My current research interests are what mathematicians call geometry and physics. More concretely, I am working in the area of enumerative geometry, where things like cohomological field theories, Gromov-Witten invariants. These are the slides of some of my talks:</p>
+	<ul>
+	  <li>BGMC: <a href="./Talks/talk_BGMC.pdf">slides</a></li>
+	  <li>Qualifying exam: <a href="./Talks/talk_quals.pdf">slides</a></li>
+	</ul>
+
+     <p> As an undergrad, I wrote a thesis on <a href="http://diposit.ub.edu/dspace/handle/2445/65415">Topological Quantum Field Theories</a>.</p>
+    </div>
+  
+  <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" id="code">Mathematica Code</h1>
+      <ul>
+      	<li>Computing Topological Recursion invariants of genus 0 spectral curves: <a href="https://github.com/RodericGuigoCorominas/Topological-Recursion">TopologicalRecursion</a></li>
+	<li>Computing fundamental objects of plane curves, resolution of singularities and more: <a href="https://github.com/RodericGuigoCorominas/planecurves">PlaneCurves</a> </li>
+      </ul>
+    </div>
+  
+  <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" id="notes">Notes</h1>
+      <ul>
+      	<li><a href="">Non-pertubative topological recursion.</a></li>
+	<li><a href="">Topological recursion on A-polynomials.</a></li>
+      </ul>
+  </div>
+ 
+  </div>
+
+ <!-- <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" id="papers">Interesting Papers</h1>
+      <p>.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>-->
+
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Roderic Guigo i Corominas<br> rguigo@bu.edu <br> MCS  </h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
