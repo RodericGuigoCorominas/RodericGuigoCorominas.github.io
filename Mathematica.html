@@ -38,8 +38,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <h4><b>Menu</b></h4>
   <a href="#diffeq" class="w3-hover-black">Differential Equations</a>
   <a href="#multi" class="w3-hover-black">Multivariable Calculus</a>
-  <a href="#stats" class="w3-hover-black">Statistics</a>
   <a href="#ml" class="w3-hover-black">Machine Learning</a>
+  <a href="#random" class="w3-hover-black">Other</a>
 </nav>
 
 <!-- Overlay effect when opening sidenav on small screens -->
@@ -52,6 +52,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-container">
       <h1 class="w3-text-teal" id="diffeq">Differential Equations</h1>
       <p> 
+	<h4>Visualizing Phase Portraits</h4>
 	<iframe width='800' height='500' src='https://www.wolframcloud.com/obj/rguigo0/Published/LinearPhasePortraits.nb' frameborder='0'></iframe> 
 	<iframe width='800' height='500' src='https://www.wolframcloud.com/obj/rguigo0/Published/PhasePortraits.nb' frameborder='0'></iframe>
       </p>
@@ -61,23 +62,35 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <div class="w3-row w3-padding-64">
     <div class="w3-container">
       <h1 class="w3-text-teal" id="multi">Multivariable Calculus</h1>
+       <h4>Curl of a Vector Field</h4>
       <p><iframe width='800' height='500' src='https://www.wolframcloud.com/obj/rguigo0/Published/Curl.nb' frameborder='0'></iframe> </p>
     </div>
   </div>
 
   <div class="w3-row w3-padding-64">
     <div class="w3-container">
-      <h1 class="w3-text-teal" id="ml">Statistics</h1>
-      <p> <iframe width='800' height='500' src='https://www.wolframcloud.com/obj/rguigo0/Published/LinearPhasePortraits.nb' frameborder='0'></iframe> </p>
+      <h1 class="w3-text-teal" id="ml">Machine Learning</h1>
+
+      <h4>Principal Components Analysis</h4>
+      <p> Principal Components Analysis can be used to reduce the dimension of points by projecting them onto a smaller dimensional space. Here are some examples of 3D shapes being projected onto their first 2 principal components.</p>
+
+      <p><iframe width='800' height='500' src='https://www.wolframcloud.com/obj/8f5bb9b3-0160-4c96-91c4-f97f5f43e621' frameborder='0'></iframe></p>
+       
+      <h4>The XOR Problem</h4>
+      <p> A Single Layer Preceptron cannot solve the XOR problem. It can be solved using Multilayer Preceptrons, more commonly known as Neural Networks. Here is an animation of a Neural Network with one hidden layer of size 2 learning the XOR problem. </p>
+      	<img src="webimages/xor_nn.gif" alt="" style="width:65%;">
     </div>
   </div>
 
   <div class="w3-row w3-padding-64">
     <div class="w3-container">
-      <h1 class="w3-text-teal" id="ml">Machine Learning</h1>
-      <p> <iframe width='800' height='500' src='https://www.wolframcloud.com/obj/rguigo0/Published/LinearPhasePortraits.nb' frameborder='0'></iframe> </p>
+      <h1 class="w3-text-teal" id="random">Other</h1>
+      <h4>Roots of Polynomials</h4>
+      <p> By the Fundamental Theorem of Algebra, polynomials of degree n to have n roots (up to multiplicity). If the subleading coefficient is not zero, as the leading coefficient of a polynomial tends to zero, one of its roots will shoot to infinity: </p>   
+	<img src="webimages/roots_polynomials.gif" alt="" style="width:65%;">
     </div>
   </div>
+
 
  <!--  <div class="w3-row">
     <div class="w3-twothird w3-container">
